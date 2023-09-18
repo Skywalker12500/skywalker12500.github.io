@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="index.js"></script>
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+  <h1>Age Calculator</h1>
+  <div id="agebox">
+    <div class="instructions">Enter your birthday to find out your exact age!</div>
+    <form id="inputbox" onsubmit="return addText();">
+      <div id="day">
+        <label for="dayin">Day DD</label><br>
+        <input id="dayin" name="dayin" type="text"  pattern="[0-9]{2}" required>
+      </div>
+      <div id="month">
+        <label for="monthin">Month MM</label><br>
+        <input id="monthin" name="monthin" type="text"  pattern="[0-9]{2}" required>
+      </div>
+      <div id="year">
+        <label for="yearin">Year YYYY</label><br>
+        <input id="yearin" name="yearin" type="text"  pattern="[0-9]{4}" required>
+      </div>
+      <div class="break"></div>
+      <input id="submit" type="submit">
+    </form>
+    <div class="line"></div>
+    <div id="outputbox">
+      <h2><a class="output" id="dayout">--</a> Days</h2>
+      <h2><a class="output" id="monthout">--</a> Months</h2>
+      <h2><a class="output" id="yearout">--</a> Years</h2>
+    </div>
+    <div class="equal">
+      <p>Age in decimal: <a id="decimal"></a></p>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/lucas-crowe-306ba0266/">Lucas Crowe</a>.
+  </div>
+</body>
+</html>

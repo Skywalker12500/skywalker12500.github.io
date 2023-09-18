@@ -1,0 +1,67 @@
+body {
+    background-color: hsl(0, 0%, 90%);
+    text-align: center;
+}
+#agebox {
+    border: 2px solid hsl(0, 1%, 50%);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px 15px 100px 15px;
+    height: 50%;
+    width: 80%;
+    padding: 5%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 20px;
+}
+#inputbox {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5%;
+    color: rgb(0,80,200);
+}
+#outputbox {
+    color: black;
+}
+input {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.attribution, .instructions {
+    text-align: center;
+}
+.line {
+    width: 100%;
+    border-bottom: 2px solid hsl(0, 1%, 50%);
+}
+h1, h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.output {
+    color: rgb(200,0,240);
+}
+#submit {
+    background-color:aqua;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    padding: 2px;
+    background-image: url(/assets/images/icon-arrow.svg);
+}
+label {
+    font-size: 15px;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
